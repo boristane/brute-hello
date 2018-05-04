@@ -1,4 +1,4 @@
-function bruteHello(){
+function bruteHello(waitTime = 10){
 
     const str = 'Hello, world!';
     const arr = str.split('');
@@ -18,7 +18,7 @@ function bruteHello(){
         if(result === str){
             clearInterval(interval);
         }
-    }, 10);
+    }, waitTime);
 }
 
 
